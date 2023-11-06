@@ -7,4 +7,15 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'amazon';
+  isHomeMenuOpen: boolean = false;
+  ngOnInit(): void {
+    console.log('home page- app')
+  }
+
+  // Function to toggle the "Home" submenu
+  toggleHomeMenu() {
+    this.isHomeMenuOpen = !this.isHomeMenuOpen;
+  }
+
+  
 }
